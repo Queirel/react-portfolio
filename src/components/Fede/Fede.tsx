@@ -7,12 +7,12 @@ export const Fede = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Fede</h1>
+        <h1 className={styles.title}>Hi, I'm Federico</h1>
         <p className={styles.description}>
           I'm a full-stack developer with 5 years of experience using React and
           NodeJS. Reach out if you'd like to learn more!
         </p>
-        <a href="mailto:federicoqueirel@email.com" className={styles.contactBtn}>
+        <a href="mailto:federicoqueirel@hotmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
