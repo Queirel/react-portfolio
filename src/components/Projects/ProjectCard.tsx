@@ -3,9 +3,20 @@ import React from "react";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
+interface Project {
+  project:{
+  title: string;
+  imageSrc: string;
+  description: string;
+  skills: string[]; 
+  demo: string; 
+  source: string;
+}
+}
+
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
-}) => {
+}: Project) => {
   return (
     <div className={styles.container}>
       <img
@@ -25,10 +36,10 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link}>
+        <a href={demo} className={styles.link} target="_blank">
           Demo
         </a>
-        <a href={source} className={styles.link}>
+        <a href={source} className={styles.link} target="_blank">
           Source
         </a>
       </div>
