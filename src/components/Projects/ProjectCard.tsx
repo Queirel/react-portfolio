@@ -9,13 +9,15 @@ interface Project {
   imageSrc: string;
   description: string;
   skills: string[]; 
-  demo: string; 
+  // demo: string; 
   source: string;
 }
 }
 
 export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
+  project: { title, imageSrc, description, skills, 
+    // demo,
+     source },
 }: Project) => {
   return (
     <div className={styles.container}>
@@ -36,9 +38,9 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link} target="_blank">
+        {/* <a href={demo} className={styles.link} target="_blank">
           Demo
-        </a>
+        </a> */}
         <a href={source} className={styles.link} target="_blank">
           Source
         </a>
